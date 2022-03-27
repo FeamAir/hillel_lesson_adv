@@ -17,4 +17,4 @@ def some_func(x, y):
     return x*y
 
 
-print(some_func(4, 6))
+print(some_func(5,3))
