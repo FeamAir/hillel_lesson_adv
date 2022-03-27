@@ -4,7 +4,7 @@ def print_log(function):
     
     @wraps(function)
     def wrapper(*args):
-        print("some_func была исполнена")
+        print(function.__doc__)
         result = function(*args)
         return result
     return wrapper
@@ -18,5 +18,3 @@ def some_func(x, y):
 
 
 print(some_func(4, 6))
-print(some_func.__name__)
-print(some_func.__doc__)
